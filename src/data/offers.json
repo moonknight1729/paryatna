@@ -1,0 +1,27 @@
+[
+    {
+      "category": "INTL FLIGHTS",
+      "title": "YOU LOVE TRAVEL, WE LOVE YOU",
+      "description": "Up to 40% OFF* on flights, stays, holiday packages, cabs & more for you",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "category": "DOM HOTELS",
+      "title": "GRAND DEAL FOR JAISALMER DESERT FESTIVAL:",
+      "description": "Up to 30% OFF* on Stays + FREE camel rides at select properties",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "category": "INTL FLIGHTS",
+      "title": "Up to 40% OFF*",
+      "description": "on flights, hotels & homestays in India & abroad",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "category": "TRAINS",
+      "title": "Trip Guarantee @ ₹1",
+      "description": "on train bookings",
+      "image": "https://via.placeholder.com/150"
+    }
+  ]
+  
