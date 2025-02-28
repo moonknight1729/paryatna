@@ -3,25 +3,32 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
 
 import App from "./App";
-import Flights from "./services/flights/Flights";
-import Hotels from "./services/hotels/Hotels";
-import HolidayPackages from "./services/holiday-package/HolidayPackages";
-import Trains from "./services/trains/Trains";
-import Cabs from "./services/cabs/Cabs";
+import Flights from "./features/flights/Flights";
+import Hotels from "./features/hotels/Hotels";
+import HolidayPackages from "./features/holiday-package/HolidayPackages";
+import Trains from "./features/trains/Trains";
+import Cabs from "./features/cabs/Cabs";
 import "./index.css";
+import Admin from "./Admin";
+import Login from "./features/authentcation/Login";
+import PrivateRoute from "./PrivateRoute";
 
 const root = document.getElementById("root");
 
 ReactDOM.createRoot(root).render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
-        <Route path="flights" element={<Flights />} />
-        <Route path="hotels" element={<Hotels />} />
-        <Route path="trains" element={<Trains />} />
-        <Route path="holiday-packages" element={<HolidayPackages />} />
-        <Route path="cabs" element={<Cabs />} />
+      <Route path="/login" element={<Login />} />
+
+      <Route element={<PrivateRoute />}>
+        <Route path="/admin" element={<App />} />
       </Route>
+
+      <Route element={<PrivateRoute />}>
+        <Route path="/user" element={<App />} />
+      </Route>
+
+
     </Routes>
   </BrowserRouter>
 );

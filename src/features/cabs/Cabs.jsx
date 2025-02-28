@@ -1,4 +1,4 @@
-import Offers from "@/Offers";
+import Offers from "@/features/offers/Offers";
 import CabSearch from "./CabsSearch";
 import React from "react";
 import CabListing from "./CabListing";

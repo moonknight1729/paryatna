@@ -1,6 +1,6 @@
 import React from 'react'
 import TrainSearch from './TrainSearch'
-import Offers from '@/Offers'
+import Offers from '@/features/offers/Offers'
 
 const Trains = () => {
   return (

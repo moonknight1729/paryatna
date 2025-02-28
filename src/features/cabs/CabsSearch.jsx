@@ -44,22 +44,27 @@ const tags = [
 
 const ServiceSection = () => {
   const [selectedFare, setSelectedFare] = useState("Regular");
+  const [cabQueryData, setCabQueryData] = useState({
+    source: "",
+    destination: "",
+    departure: "",
+    return: "",
+    pickup: "",
+    drop: "",
+  });
 
   return (
     <div className=" border-[1px] p-2 my-4">
       <div className="flex flex-row items-center gap-2 m-12">
         <div>
           <input type="radio" />
-          <label>One Way</label>
+          <label>OutStation One-Way</label>
         </div>
         <div>
           <input type="radio" />
-          <label>Round Trip</label>
+          <label>OutStation Round-Trip</label>
         </div>
-        <div>
-          <input type="radio" />
-          <label>Multi City</label>
-        </div>
+        
       </div>
 
       <div className="flex flex-row justify-around m-12 border-[1px]">
@@ -126,56 +131,27 @@ const ServiceSection = () => {
           <label className="block text-gray-600 text-sm">Departure</label>
           <input type="date" className="w-full border p-2 rounded-md" />
         </div>
-        <div  className="border-[1px]">
+        <div className="border-[1px]">
           <label className="block text-gray-600 text-sm">Return</label>
           <input type="date" className="w-full border p-2 rounded-md" />
         </div>
 
         <div className="border-[1px]">
-          <label className="block text-gray-600 text-sm">
-            Travellers & Class
-          </label>
-          <input
-            type="text"
-            placeholder="1 Traveller, Economy"
-            className="w-full border p-2 rounded-md"
-          />
+          <label className="block text-gray-600 text-sm">Pickup Time</label>
+          <input type="time" />
+        </div>
+        <div className="border-[1px]">
+          <label className="block text-gray-600 text-sm">Drop Time</label>
+          <input type="time" />
         </div>
       </div>
 
-      <div className="flex flex-row justify-around mt-12">
-        {[
-          "Regular",
-          "Student",
-          "Senior Citizen",
-          "Armed Forces",
-          "Doctors and Nurses",
-        ].map((fare) => (
-          <label
-            key={fare}
-            className="flex flex-row"
-          >
-            <input
-              type="radio"
-              name="fare"
-              value={fare}
-              checked={selectedFare === fare}
-              onChange={() => setSelectedFare(fare)}
-            />
-            <div
-             
-            >
-              {fare}
-            </div>
-          </label>
-        ))}
-      </div>
-<div className="flex flex-row justify-center">
-<button className="mt-6 w-1/5 bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700">
-        SEARCH
-      </button>
-</div>
      
+      <div className="flex flex-row justify-center">
+        <button className="mt-6 w-1/5 bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700">
+          SEARCH
+        </button>
+      </div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react'
 import HotelSearch from './HotelSearch'
 import DestinationList from './DestinationList'
-import Offers from '@/Offers'
+import Offers from '@/features/offers/Offers'
 import AppDownload from '@/AppDownload'
 
 const Hotels = () => {

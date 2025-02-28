@@ -1,13 +1,14 @@
 import React from "react";
 import BestSellingDestinations from "./BestSellinDestination";
 import  PackageSearch  from "./PackageSearch";
-import Offers from "@/Offers";
+import Nav from "./Nav";
 
 const HolidayPackages = () => {
   return (
     <div>
-      <PackageSearch/>
-      <Offers/>
+
+      <Nav/>
+  
       <BestSellingDestinations />
     
     </div>

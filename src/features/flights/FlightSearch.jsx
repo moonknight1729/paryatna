@@ -8,6 +8,7 @@ import {
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
+import TravellersSelection from "./TravellersSelection";
 
 const tags = [
   "New York",
@@ -42,33 +43,48 @@ const tags = [
   "Lisbon",
 ];
 
-const PackageSearch = () => {
+const ServiceSection = () => {
+   
+  //const dispatch = 
+
+
   const [selectedFare, setSelectedFare] = useState("Regular");
+  const [searchData, setSearchData] = useState({
+    source: "",
+    destination: "",
+    departure: "",
+    return: "",
+    travellers: {
+      adults: "",
+      infants: "",
+      children: "",
+    },
+    class: "",
+    category:"",
+  });
 
   return (
     <div className=" border-[1px] p-2 my-4">
-      <div className="flex flex-row items-center gap-2 m-12">
+      <div className="flex flex-row items-center gap-2 ">
         <div>
-          <input type="radio" />
+          <input onInput={()=>dispatch(onInput)} type="radio" />
           <label>One Way</label>
         </div>
         <div>
           <input type="radio" />
           <label>Round Trip</label>
         </div>
-        <div>
-          <input type="radio" />
-          <label>Multi City</label>
-        </div>
+       
       </div>
 
       <div className="flex flex-row justify-around m-12 border-[1px]">
         <Popover>
           <PopoverTrigger asChild>
-            <button className="px-16 py-8 border-[1px] ">
+            <button className="px-16 py-8 border-r-[1px] ">
+              From
               <PopoverAnchor />
-              hell
-              <div>hello</div>
+              <h1>city</h1>
+              <div>airport</div>
             </button>
           </PopoverTrigger>
 
@@ -95,10 +111,11 @@ const PackageSearch = () => {
 
         <Popover>
           <PopoverTrigger asChild>
-            <button className="px-16 py-8 border-[1px] ">
+            <button className="px-16 py-8 border-r-[1px] ">
+              To
               <PopoverAnchor />
-              hell
-              <div>hello</div>
+              <h1>city</h1>
+              <div>airport</div>
             </button>
           </PopoverTrigger>
 
@@ -124,22 +141,41 @@ const PackageSearch = () => {
         </Popover>
         <div className="border-[1px]">
           <label className="block text-gray-600 text-sm">Departure</label>
-          <input type="date" className="w-full border p-2 rounded-md" />
+          <input
+            type="date"
+            value={searchData.departure}
+            className="w-full border p-2 rounded-md"
+          />
         </div>
-        <div  className="border-[1px]">
+        <div className="border-[1px]">
           <label className="block text-gray-600 text-sm">Return</label>
-          <input type="date" className="w-full border p-2 rounded-md" />
+          <input
+            type="date"
+            value={searchData.departure}
+            className="w-full border p-2 rounded-md"
+          />
         </div>
 
-        <div className="border-[1px]">
+        <div className="border-[1px] ">
           <label className="block text-gray-600 text-sm">
             Travellers & Class
           </label>
-          <input
-            type="text"
-            placeholder="1 Traveller, Economy"
-            className="w-full border p-2 rounded-md"
-          />
+          <Popover>
+          <PopoverTrigger asChild>
+            <button className="px-16 py-8 border-r-[1px] ">
+              Travellers and classes
+              <PopoverAnchor />
+              <h1>6 Travellers</h1>
+              <div>class</div>
+            </button>
+          </PopoverTrigger>
+
+          <PopoverContent className=" p-8 w-full " sideOffset={2}>
+           
+            <TravellersSelection/>
+          
+          </PopoverContent>
+        </Popover>
         </div>
       </div>
 
@@ -151,10 +187,7 @@ const PackageSearch = () => {
           "Armed Forces",
           "Doctors and Nurses",
         ].map((fare) => (
-          <label
-            key={fare}
-            className="flex flex-row"
-          >
+          <label key={fare} className="flex flex-row">
             <input
               type="radio"
               name="fare"
@@ -162,22 +195,17 @@ const PackageSearch = () => {
               checked={selectedFare === fare}
               onChange={() => setSelectedFare(fare)}
             />
-            <div
-             
-            >
-              {fare}
-            </div>
+            <div>{fare}</div>
           </label>
         ))}
       </div>
-<div className="flex flex-row justify-center">
-<button className="mt-6 w-1/5 bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700">
-        SEARCH
-      </button>
-</div>
-     
+      <div className="flex flex-row justify-center">
+        <button className="mt-6 w-1/5 bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700">
+          SEARCH
+        </button>
+      </div>
     </div>
   );
 };
 
-export default PackageSearch;
+export default ServiceSection;

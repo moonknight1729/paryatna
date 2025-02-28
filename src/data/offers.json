@@ -1,27 +1,182 @@
 [
     {
-      "category": "INTL FLIGHTS",
-      "title": "YOU LOVE TRAVEL, WE LOVE YOU",
-      "description": "Up to 40% OFF* on flights, stays, holiday packages, cabs & more for you",
-      "image": "https://via.placeholder.com/150"
+        "category": "Flights",
+        "title": "EXCLUSIVE AIRFARE DEALS",
+        "description": "Save up to 50% on domestic and international flights",
+        "image": "https://via.placeholder.com/150"
     },
     {
-      "category": "DOM HOTELS",
-      "title": "GRAND DEAL FOR JAISALMER DESERT FESTIVAL:",
-      "description": "Up to 30% OFF* on Stays + FREE camel rides at select properties",
-      "image": "https://via.placeholder.com/150"
+        "category": "Flights",
+        "title": "LIMITED TIME FLIGHT SALE",
+        "description": "Flat 40% OFF on round-trip flights this weekend",
+        "image": "https://via.placeholder.com/150"
     },
     {
-      "category": "INTL FLIGHTS",
-      "title": "Up to 40% OFF*",
-      "description": "on flights, hotels & homestays in India & abroad",
-      "image": "https://via.placeholder.com/150"
+        "category": "Flights",
+        "title": "BOOK EARLY, SAVE MORE",
+        "description": "Get up to 30% discount on advance flight bookings",
+        "image": "https://via.placeholder.com/150"
     },
     {
-      "category": "TRAINS",
-      "title": "Trip Guarantee @ ₹1",
-      "description": "on train bookings",
-      "image": "https://via.placeholder.com/150"
+        "category": "Flights",
+        "title": "INTERNATIONAL FLIGHT BONANZA",
+        "description": "Exclusive discounts on flights to Europe and Asia",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Flights",
+        "title": "STUDENT SPECIAL DISCOUNTS",
+        "description": "Extra 10% OFF for students on select flights",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Flights",
+        "title": "PREMIUM FLIGHT UPGRADES",
+        "description": "Get free upgrades on business class seats",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Hotels",
+        "title": "LUXURY STAYS AT BEST PRICES",
+        "description": "Get up to 45% OFF* on premium hotels across major cities",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Hotels",
+        "title": "WEEKEND GETAWAY DEALS",
+        "description": "Enjoy up to 35% OFF on weekend hotel stays",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Hotels",
+        "title": "COZY HOMESTAYS DISCOUNT",
+        "description": "Save 25% on verified homestays in scenic locations",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Hotels",
+        "title": "EXCLUSIVE BEACH RESORT OFFERS",
+        "description": "Book beach resorts with 50% OFF for a limited time",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Hotels",
+        "title": "HONEYMOON SUITES AT 40% OFF",
+        "description": "Special discounts for couples on premium hotel stays",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Hotels",
+        "title": "FREE BREAKFAST & WIFI INCLUDED",
+        "description": "Get complimentary breakfast and WiFi on select bookings",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Trains",
+        "title": "TRAIN TRAVEL MADE EASY",
+        "description": "Flat ₹100 cashback on your next train booking",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Trains",
+        "title": "LAST MINUTE TRAIN DEALS",
+        "description": "Special discounts on same-day train bookings",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Trains",
+        "title": "BOOK EARLY & SAVE MORE",
+        "description": "Up to 20% OFF on advance train reservations",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Trains",
+        "title": "SENIOR CITIZEN TRAIN DISCOUNTS",
+        "description": "Exclusive deals for senior travelers on all routes",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Trains",
+        "title": "GROUP TRAVEL SPECIALS",
+        "description": "Book for 4 or more and get a flat 15% OFF",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Trains",
+        "title": "PREMIUM TRAIN EXPERIENCE",
+        "description": "Enjoy luxury train journeys with 30% discount",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Cabs",
+        "title": "RIDE MORE, PAY LESS",
+        "description": "Enjoy up to 25% discount on your cab rides",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Cabs",
+        "title": "AIRPORT PICKUP SPECIAL",
+        "description": "Flat ₹200 OFF on first-time airport pickups",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Cabs",
+        "title": "WEEKEND CAB DISCOUNTS",
+        "description": "Book weekend rides with 20% OFF",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Cabs",
+        "title": "LUXURY CAB DEALS",
+        "description": "Flat 30% OFF on premium car rentals",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Cabs",
+        "title": "SHARED RIDES, LOW PRICES",
+        "description": "Save 50% when you choose shared rides",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Cabs",
+        "title": "CITY TOUR CAB SPECIALS",
+        "description": "Book a full-day city tour cab and get 20% OFF",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Holidays",
+        "title": "DREAM VACATIONS AWAIT",
+        "description": "Book holiday packages with up to 35% OFF + free sightseeing tours",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Holidays",
+        "title": "MOUNTAIN ESCAPE DEALS",
+        "description": "Enjoy snow-capped peaks with exclusive holiday packages",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Holidays",
+        "title": "TROPICAL BEACH GETAWAYS",
+        "description": "Save 40% on holiday packages to beach destinations",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Holidays",
+        "title": "FAMILY VACATION SPECIALS",
+        "description": "Flat 20% OFF on family-friendly holiday plans",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Holidays",
+        "title": "ADVENTURE HOLIDAY OFFERS",
+        "description": "Get special deals on trekking and adventure trips",
+        "image": "https://via.placeholder.com/150"
+    },
+    {
+        "category": "Holidays",
+        "title": "ROMANTIC GETAWAYS",
+        "description": "Exclusive honeymoon and couple trip discounts",
+        "image": "https://via.placeholder.com/150"
     }
-  ]
-  
+]
